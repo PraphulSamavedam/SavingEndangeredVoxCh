@@ -1,6 +1,8 @@
 # Secrets file
 secrets.py
 endangered_species.json
+*.tif
+*.png
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
