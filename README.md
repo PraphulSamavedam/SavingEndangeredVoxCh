@@ -66,6 +66,26 @@ Where:
 NIR represents the near-infrared light reflected by the vegetation.
 Red represents the red light absorbed by the vegetation.
 
+### Model Architecture
+
+## CNN Component:
+Input layer (image size matching the dataset)
+3 Convolutional blocks, each containing:
+2 Convolutional layers
+1 Max pooling layer
+1 Dropout layer (25% dropout rate)
+Total of 8 convolutional layers and 4 pooling layers
+Kernel size: 3x3
+Filters: 32, 64, 128, 256 (increasing in deeper layers)
+Activation: ReLU
+Padding: Same
+Stride: (1,1)
+
+## LSTM Component:
+Flatten layer to convert CNN output to 1D
+4 LSTM layers with 64 and 128 cells
+Activation: tanh
+Dropout: 25% after each LSTM layer
 
 Results
 The key outcomes of this project include:
