@@ -68,7 +68,7 @@ Red represents the red light absorbed by the vegetation.
 
 ### Model Architecture
 
-## CNN Component:
+CNN Component:
 Input layer (image size matching the dataset)
 3 Convolutional blocks, each containing:
 2 Convolutional layers
@@ -81,7 +81,7 @@ Activation: ReLU
 Padding: Same
 Stride: (1,1)
 
-## LSTM Component:
+LSTM Component:
 Flatten layer to convert CNN output to 1D
 4 LSTM layers with 64 and 128 cells
 Activation: tanh
