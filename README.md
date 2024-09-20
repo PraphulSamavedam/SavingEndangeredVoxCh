@@ -61,15 +61,11 @@ LSTM: The LSTM network processes the time-series data related to vegetation heal
  
 NDVI Calculation:
 
-NDVI is calculated using the formula:
- NDVI = (NIR − Red NIR) +
-Red
-NDVI = 
-NIR+Red
-NIR−Red
+NDVI = NDVI=(NIR+Red)/(NIR−Red)​ 
+Where:
+NIR represents the near-infrared light reflected by the vegetation.
+Red represents the red light absorbed by the vegetation.
 
-Where:  NIR is the near-infrared band of the satellite image.
-Red is the red band of the satellite image.
 
 Results
 The key outcomes of this project include:
