@@ -1,6 +1,6 @@
 import requests
 
-
+#sama killed the process and gowreesh saved it
 def get_species_locations(scientific_name):
     base_url = "https://api.gbif.org/v1/occurrence/search"
 
